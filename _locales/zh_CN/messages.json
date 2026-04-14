@@ -1,0 +1,219 @@
+{
+  "extName": {
+    "message": "ERP 订单同步"
+  },
+  "extDescription": {
+    "message": "从 ERP 页面提取订单数据，并同步到第三方 API。"
+  },
+  "popupTitle": {
+    "message": "ERP 订单同步"
+  },
+  "popupHeading": {
+    "message": "ERP 订单同步"
+  },
+  "popupHint": {
+    "message": "从当前 ERP 页面抓取订单，并同步到第三方接口。"
+  },
+  "popupScrapeBtn": {
+    "message": "抓取订单"
+  },
+  "popupSyncBtn": {
+    "message": "抓取并同步"
+  },
+  "popupStatusIdle": {
+    "message": "等待执行"
+  },
+  "popupStatusWorking": {
+    "message": "处理中..."
+  },
+  "popupStatusScrapeDone": {
+    "message": "抓取完成，共 $1 条",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupStatusSyncDone": {
+    "message": "同步完成，共 $1 条",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupStatusFailed": {
+    "message": "执行失败"
+  },
+  "popupOpenSettings": {
+    "message": "打开配置"
+  },
+  "popupViewLogs": {
+    "message": "查看日志"
+  },
+  "popupErrorContentScriptMissing": {
+    "message": "当前页面未加载插件脚本。请刷新 ERP 页面后重试，或确认该页面允许扩展运行。"
+  },
+  "popupErrorNoActiveTab": {
+    "message": "未找到当前活动标签页。"
+  },
+  "optionsTitle": {
+    "message": "ERP 订单同步配置"
+  },
+  "optionsHeading": {
+    "message": "ERP 订单同步配置"
+  },
+  "labelApiUrl": {
+    "message": "第三方 API 地址"
+  },
+  "placeholderApiUrl": {
+    "message": "https://api.example.com/orders/sync"
+  },
+  "labelApiToken": {
+    "message": "API Token"
+  },
+  "placeholderApiToken": {
+    "message": "Bearer Token"
+  },
+  "labelErpPatterns": {
+    "message": "ERP 页面 URL 规则"
+  },
+  "placeholderErpPatterns": {
+    "message": "每行一个字符串或正则，例如\\nerp.example.com/orders\\n/orders/list"
+  },
+  "labelTableSelector": {
+    "message": "订单表格选择器"
+  },
+  "placeholderTableSelector": {
+    "message": "table.orders-table"
+  },
+  "labelSyncMode": {
+    "message": "同步模式"
+  },
+  "syncModeBatch": {
+    "message": "批量 POST"
+  },
+  "syncModeSingle": {
+    "message": "逐条 POST"
+  },
+  "labelDebugEnabled": {
+    "message": "调试日志"
+  },
+  "labelUiLanguage": {
+    "message": "界面语言"
+  },
+  "uiLanguageAuto": {
+    "message": "跟随浏览器"
+  },
+  "uiLanguageEnglish": {
+    "message": "English"
+  },
+  "uiLanguageChinese": {
+    "message": "简体中文"
+  },
+  "debugDisabled": {
+    "message": "关闭"
+  },
+  "debugEnabled": {
+    "message": "开启"
+  },
+  "labelExtraHeaders": {
+    "message": "附加请求头"
+  },
+  "placeholderExtraHeaders": {
+    "message": "JSON 格式，例如 {\"X-App-Id\":\"erp-sync\"}"
+  },
+  "labelFieldMappings": {
+    "message": "字段映射"
+  },
+  "placeholderFieldMappings": {
+    "message": "JSON 格式，例如 {\"orderNo\":[\"订单号\",\"单号\"],\"customerName\":[\"客户名称\"]}"
+  },
+  "optionsSaveBtn": {
+    "message": "保存配置"
+  },
+  "optionsViewLogsBtn": {
+    "message": "查看日志"
+  },
+  "optionsSaveIdle": {
+    "message": "尚未保存"
+  },
+  "optionsSaveSuccess": {
+    "message": "保存成功"
+  },
+  "optionsLanguageChanged": {
+    "message": "语言已更新，其他已打开的弹窗或页面需要重新打开后生效。"
+  },
+  "optionsSaveFailed": {
+    "message": "保存失败: $1",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsHintLogs": {
+    "message": "开启调试日志后，插件会把抓取和同步过程写入独立日志页，不依赖网页控制台。"
+  },
+  "optionsHintLanguage": {
+    "message": "你可以在这里强制切换扩展界面语言。商店展示语言和扩展管理页名称仍然由浏览器和商店设置决定。"
+  },
+  "optionsErrorInvalidJson": {
+    "message": "$1 不是合法 JSON",
+    "placeholders": {
+      "field": {
+        "content": "$1"
+      }
+    }
+  },
+  "logPageTitle": {
+    "message": "ERP 订单同步日志"
+  },
+  "logHeading": {
+    "message": "调试日志"
+  },
+  "logHint": {
+    "message": "这里查看插件抓取和同步过程日志，不依赖目标网页控制台。"
+  },
+  "logRefreshBtn": {
+    "message": "刷新日志"
+  },
+  "logCopyBtn": {
+    "message": "复制日志"
+  },
+  "logClearBtn": {
+    "message": "清空日志"
+  },
+  "logStatusIdle": {
+    "message": "等待加载"
+  },
+  "logStatusLoading": {
+    "message": "加载中..."
+  },
+  "logStatusLoadFailed": {
+    "message": "加载日志失败"
+  },
+  "logStatusCount": {
+    "message": "共 $1 条日志",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "logEmpty": {
+    "message": "暂无日志"
+  },
+  "logStatusNoCopy": {
+    "message": "没有可复制的日志"
+  },
+  "logStatusCopied": {
+    "message": "日志已复制"
+  },
+  "logStatusClearFailed": {
+    "message": "清空日志失败"
+  },
+  "logStatusCleared": {
+    "message": "日志已清空"
+  }
+}

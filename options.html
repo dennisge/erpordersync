@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-i18n-title="optionsTitle">
+    <main class="settings">
+      <h1 data-i18n="optionsHeading"></h1>
+      <form id="settingsForm">
+        <label>
+          <span data-i18n="labelApiUrl"></span>
+          <input type="url" id="apiUrl" data-i18n-placeholder="placeholderApiUrl" required />
+        </label>
+
+        <label>
+          <span data-i18n="labelApiToken"></span>
+          <input type="password" id="apiToken" data-i18n-placeholder="placeholderApiToken" />
+        </label>
+
+        <label>
+          <span data-i18n="labelErpPatterns"></span>
+          <textarea id="erpUrlPatterns" rows="4" data-i18n-placeholder="placeholderErpPatterns"></textarea>
+        </label>
+
+        <label>
+          <span data-i18n="labelTableSelector"></span>
+          <input type="text" id="tableSelector" data-i18n-placeholder="placeholderTableSelector" />
+        </label>
+
+        <label>
+          <span data-i18n="labelSyncMode"></span>
+          <select id="syncMode">
+            <option value="batch" data-i18n="syncModeBatch"></option>
+            <option value="single" data-i18n="syncModeSingle"></option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="labelDebugEnabled"></span>
+          <select id="debugEnabled">
+            <option value="false" data-i18n="debugDisabled"></option>
+            <option value="true" data-i18n="debugEnabled"></option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="labelUiLanguage"></span>
+          <select id="uiLanguage">
+            <option value="auto" data-i18n="uiLanguageAuto"></option>
+            <option value="en" data-i18n="uiLanguageEnglish"></option>
+            <option value="zh_CN" data-i18n="uiLanguageChinese"></option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="labelExtraHeaders"></span>
+          <textarea id="extraHeaders" rows="5" data-i18n-placeholder="placeholderExtraHeaders"></textarea>
+        </label>
+
+        <label>
+          <span data-i18n="labelFieldMappings"></span>
+          <textarea
+            id="fieldMappings"
+            rows="10"
+            data-i18n-placeholder="placeholderFieldMappings"
+          ></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="primary" data-i18n="optionsSaveBtn"></button>
+          <a class="button-link" href="logs.html" target="_blank" data-i18n="optionsViewLogsBtn"></a>
+        </div>
+      </form>
+      <div id="saveStatus" class="status" data-i18n="optionsSaveIdle"></div>
+      <p class="hint" data-i18n="optionsHintLanguage"></p>
+      <p class="hint" data-i18n="optionsHintLogs"></p>
+    </main>
+    <script src="i18n.js"></script>
+    <script src="options.js"></script>
+  </body>
+  </html>

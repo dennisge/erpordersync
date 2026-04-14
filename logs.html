@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-i18n-title="logPageTitle">
+    <main class="settings page-shell">
+      <div class="section-header">
+        <div>
+          <h1 data-i18n="logHeading"></h1>
+          <p class="hint" data-i18n="logHint"></p>
+        </div>
+        <div class="actions">
+          <button type="button" id="refreshLogsBtn" data-i18n="logRefreshBtn"></button>
+          <button type="button" id="copyLogsBtn" data-i18n="logCopyBtn"></button>
+          <button type="button" id="clearLogsBtn" data-i18n="logClearBtn"></button>
+        </div>
+      </div>
+      <div id="pageStatus" class="status" data-i18n="logStatusIdle"></div>
+      <pre id="debugLogs" class="result compact"></pre>
+    </main>
+    <script src="i18n.js"></script>
+    <script src="logs.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,219 @@
+{
+  "extName": {
+    "message": "ERP Order Sync"
+  },
+  "extDescription": {
+    "message": "Extract order data from ERP pages and sync it to a third-party API."
+  },
+  "popupTitle": {
+    "message": "ERP Order Sync"
+  },
+  "popupHeading": {
+    "message": "ERP Order Sync"
+  },
+  "popupHint": {
+    "message": "Extract orders from the current ERP page and sync them to a third-party API."
+  },
+  "popupScrapeBtn": {
+    "message": "Scrape Orders"
+  },
+  "popupSyncBtn": {
+    "message": "Scrape and Sync"
+  },
+  "popupStatusIdle": {
+    "message": "Waiting"
+  },
+  "popupStatusWorking": {
+    "message": "Processing..."
+  },
+  "popupStatusScrapeDone": {
+    "message": "Scrape completed, $1 orders found",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupStatusSyncDone": {
+    "message": "Sync completed, $1 orders sent",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupStatusFailed": {
+    "message": "Failed"
+  },
+  "popupOpenSettings": {
+    "message": "Open Settings"
+  },
+  "popupViewLogs": {
+    "message": "View Logs"
+  },
+  "popupErrorContentScriptMissing": {
+    "message": "The extension script is not loaded on the current page. Refresh the ERP page and try again, or confirm extensions are allowed on this page."
+  },
+  "popupErrorNoActiveTab": {
+    "message": "No active tab found."
+  },
+  "optionsTitle": {
+    "message": "ERP Order Sync Settings"
+  },
+  "optionsHeading": {
+    "message": "ERP Order Sync Settings"
+  },
+  "labelApiUrl": {
+    "message": "Third-Party API URL"
+  },
+  "placeholderApiUrl": {
+    "message": "https://api.example.com/orders/sync"
+  },
+  "labelApiToken": {
+    "message": "API Token"
+  },
+  "placeholderApiToken": {
+    "message": "Bearer Token"
+  },
+  "labelErpPatterns": {
+    "message": "ERP Page URL Patterns"
+  },
+  "placeholderErpPatterns": {
+    "message": "One pattern per line, for example\\nerp.example.com/orders\\n/orders/list"
+  },
+  "labelTableSelector": {
+    "message": "Order Table Selector"
+  },
+  "placeholderTableSelector": {
+    "message": "table.orders-table"
+  },
+  "labelSyncMode": {
+    "message": "Sync Mode"
+  },
+  "syncModeBatch": {
+    "message": "Batch POST"
+  },
+  "syncModeSingle": {
+    "message": "Single POST"
+  },
+  "labelDebugEnabled": {
+    "message": "Debug Logging"
+  },
+  "labelUiLanguage": {
+    "message": "Interface Language"
+  },
+  "uiLanguageAuto": {
+    "message": "Follow Browser"
+  },
+  "uiLanguageEnglish": {
+    "message": "English"
+  },
+  "uiLanguageChinese": {
+    "message": "Simplified Chinese"
+  },
+  "debugDisabled": {
+    "message": "Off"
+  },
+  "debugEnabled": {
+    "message": "On"
+  },
+  "labelExtraHeaders": {
+    "message": "Extra Headers"
+  },
+  "placeholderExtraHeaders": {
+    "message": "JSON format, for example {\"X-App-Id\":\"erp-sync\"}"
+  },
+  "labelFieldMappings": {
+    "message": "Field Mappings"
+  },
+  "placeholderFieldMappings": {
+    "message": "JSON format, for example {\"orderNo\":[\"Order No\",\"order_no\"],\"customerName\":[\"Customer Name\"]}"
+  },
+  "optionsSaveBtn": {
+    "message": "Save Settings"
+  },
+  "optionsViewLogsBtn": {
+    "message": "View Logs"
+  },
+  "optionsSaveIdle": {
+    "message": "Not saved yet"
+  },
+  "optionsSaveSuccess": {
+    "message": "Saved"
+  },
+  "optionsLanguageChanged": {
+    "message": "Language updated. Reopen popup or other pages if needed."
+  },
+  "optionsSaveFailed": {
+    "message": "Save failed: $1",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsHintLogs": {
+    "message": "When debug logging is enabled, the extension writes scrape and sync traces to a separate logs page instead of relying on the target page console."
+  },
+  "optionsHintLanguage": {
+    "message": "You can force the extension UI language here. Store listing language still follows the browser and extension store settings."
+  },
+  "optionsErrorInvalidJson": {
+    "message": "$1 is not valid JSON",
+    "placeholders": {
+      "field": {
+        "content": "$1"
+      }
+    }
+  },
+  "logPageTitle": {
+    "message": "ERP Order Sync Logs"
+  },
+  "logHeading": {
+    "message": "Debug Logs"
+  },
+  "logHint": {
+    "message": "Review scrape and sync logs here without relying on the target page console."
+  },
+  "logRefreshBtn": {
+    "message": "Refresh"
+  },
+  "logCopyBtn": {
+    "message": "Copy"
+  },
+  "logClearBtn": {
+    "message": "Clear"
+  },
+  "logStatusIdle": {
+    "message": "Waiting to load"
+  },
+  "logStatusLoading": {
+    "message": "Loading..."
+  },
+  "logStatusLoadFailed": {
+    "message": "Failed to load logs"
+  },
+  "logStatusCount": {
+    "message": "$1 log entries",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "logEmpty": {
+    "message": "No logs yet"
+  },
+  "logStatusNoCopy": {
+    "message": "No logs to copy"
+  },
+  "logStatusCopied": {
+    "message": "Logs copied"
+  },
+  "logStatusClearFailed": {
+    "message": "Failed to clear logs"
+  },
+  "logStatusCleared": {
+    "message": "Logs cleared"
+  }
+}

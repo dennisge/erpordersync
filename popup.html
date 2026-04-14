@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="popup" data-i18n-title="popupTitle">
+    <main class="panel">
+      <h1 data-i18n="popupHeading"></h1>
+      <p class="hint" data-i18n="popupHint"></p>
+      <div class="actions">
+        <button id="scrapeBtn" data-i18n="popupScrapeBtn"></button>
+        <button id="syncBtn" class="primary" data-i18n="popupSyncBtn"></button>
+      </div>
+      <div id="status" class="status" data-i18n="popupStatusIdle"></div>
+      <pre id="result" class="result"></pre>
+      <div class="quick-links">
+        <a class="settings-link" href="options.html" target="_blank" data-i18n="popupOpenSettings"></a>
+        <a class="settings-link" href="logs.html" target="_blank" data-i18n="popupViewLogs"></a>
+      </div>
+    </main>
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+  </body>
+  </html>
