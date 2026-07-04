@@ -93,6 +93,34 @@ English documentation: [README.md](./README.md)
 }
 ```
 
+## 本地打包
+
+生成可本地加载的扩展目录和 zip 包：
+
+```bash
+rm -rf dist/erpordersync-0.1.0 dist/erpordersync-0.1.0.zip
+
+mkdir -p dist/erpordersync-0.1.0/assets \
+  dist/erpordersync-0.1.0/docs \
+  dist/erpordersync-0.1.0/_locales
+
+cp manifest.json background.js content.js i18n.js \
+  popup.html popup.js options.html options.js logs.html logs.js styles.css \
+  README.md README.zh-CN.md LICENSE \
+  dist/erpordersync-0.1.0/
+
+cp -R assets/icons assets/branding dist/erpordersync-0.1.0/assets/
+cp -R _locales/* dist/erpordersync-0.1.0/_locales/
+cp docs/PRIVACY.en.md docs/PRIVACY.zh-CN.md docs/STORE_LISTING.en.md docs/STORE_LISTING.zh-CN.md dist/erpordersync-0.1.0/docs/
+
+cd dist
+zip -r erpordersync-0.1.0.zip erpordersync-0.1.0
+```
+
+本地加载目录：`dist/erpordersync-0.1.0`。
+
+zip 包位置：`dist/erpordersync-0.1.0.zip`。
+
 ## 发布说明
 
 - Chrome Web Store 和 Microsoft Edge Add-ons 都要求使用位图图标，项目已提供 `assets/icons/` 下的发布图标。
