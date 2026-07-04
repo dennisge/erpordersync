@@ -93,6 +93,34 @@ Single mode:
 }
 ```
 
+## Build Local Package
+
+Generate an unpacked local extension directory and a zip package:
+
+```bash
+rm -rf dist/erpordersync-0.1.0 dist/erpordersync-0.1.0.zip
+
+mkdir -p dist/erpordersync-0.1.0/assets \
+  dist/erpordersync-0.1.0/docs \
+  dist/erpordersync-0.1.0/_locales
+
+cp manifest.json background.js content.js i18n.js \
+  popup.html popup.js options.html options.js logs.html logs.js styles.css \
+  README.md README.zh-CN.md LICENSE \
+  dist/erpordersync-0.1.0/
+
+cp -R assets/icons assets/branding dist/erpordersync-0.1.0/assets/
+cp -R _locales/* dist/erpordersync-0.1.0/_locales/
+cp docs/PRIVACY.en.md docs/PRIVACY.zh-CN.md docs/STORE_LISTING.en.md docs/STORE_LISTING.zh-CN.md dist/erpordersync-0.1.0/docs/
+
+cd dist
+zip -r erpordersync-0.1.0.zip erpordersync-0.1.0
+```
+
+Load the unpacked extension from `dist/erpordersync-0.1.0`.
+
+The zip package is generated at `dist/erpordersync-0.1.0.zip`.
+
 ## Publishing Notes
 
 - Chrome Web Store and Microsoft Edge Add-ons both require raster icons; the required extension icons are included in `assets/icons/`.
